@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografías stardom para títulos*/
+h1 {font-family: 'Stardom', sans-serif;}
+
+/* Tipografía poppins-light */
+h3, h4, p, ul, form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ul {
+    color: #595652;
+}
