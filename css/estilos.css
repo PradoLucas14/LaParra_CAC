@@ -1,18 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-/* Tipografías stardom para títulos*/
-h1 {font-family: 'Stardom', sans-serif;}
-
-/* Tipografía poppins-light */
-h3, h4, p, ul, form {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+    box-sizing: border-box;
+}
+/*<----------------- NAVBAR Y BANNER ----------------->*/
+.banner-image{
+    background-image: url("/assets/img/principal/pexels-kxrz-2664149.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
-ul {
-    color: #595652;
 }
