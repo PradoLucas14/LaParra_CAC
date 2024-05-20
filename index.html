@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xBKpOkg/WJb3s5w0mYYTO5nNwdm7rdLZcFF4nOdWUL+uV8YlIFV9G0tJdNc19g5UbXlBv7a1iMzU7eFvPwa84Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>La Parra | Tu vinoteca online</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -17,21 +18,6 @@
 <body>
 
     <header>
-        <!--<nav>
-            <div>
-                <a href="/"><span>La Parra</span></a>
-            </div>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Conocenos</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Contactanos</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
-            </ul>
-
-        </nav>-->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
             <div class="container">
                 <a href="#" class="navbar-brand">La Parra</a>
@@ -43,8 +29,7 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Preguntas</a></li>
+                        <li class="nav-item"><a href="#masVendidos" class="nav-link">Productos</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Contactanos</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Conocenos</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Acceso</a></li>
@@ -68,133 +53,62 @@
                 </div>
             </div>
         </div>
-
-        </div>
     </header>
 
-    <main>
-
-        <section>
-            <h2>Nuestra selección de vinos</h2>
-
-            <p>Todos los meses nuestro equipo de sommeliers realiza mediante catas a ciegas una seleccion de vinos para cada una de nuestras lineas, contemplando a todas las bodegas que deseen paricipar, varietales y regiones de Argentina.</p>
-
-        </section>
-
-        <br>
-
-        <section>
-
-            <h2>Nuestro servicio</h2>
-            <h4>Calidad</h4>
-            <p>Alto estandard de calidad y servicio</p>
-            <h4>Respuesta inmediata</h4>
-            <p>Respondemos con rapidez a los pedidos</p>
-            <h4>Compromiso</h4>
-            <p>Integramos valores, conocimientos y experiencia comprometiendonos a brindarte lo mejor</p>
-
-        </section>
-
-        <br>
-
-        <section>
-
-            <h2>Probá nuestra cosecha especial para vos!</h2>
-            <h3>Contamos con esta selección especial para que aproveches dónde y con quienes quieras</h3>
-
-        </section>
-
-        <br>
-
-        <h2>Al realizar tu primera compra te envíamos un libro de recetas para acompañar con vino</h2>
-
-        <br>
-
-        <section>
-
-            <h2>Elegí tu experiencia</h2>
-            <h3>¿Cuál es el mejor combo para vos?</h3>
-            <h3>Pack 1: Un gustito</h3>
-            <ul>
-                <li>3 botellas de 375 ml.</li>
-                <li>Carta de degustación y maridaje</li>
-            </ul>
-            <h3>Pack 2: Aficionado</h3>
-            <ul>
-                <li>4 botellas de 375 ml.</li>
-                <li>2 botellas de 750 ml.</li>
-                <li>Carta de degustación y maridaje</li>
-            </ul>
-            <h3>Pack 3: Para el más fan</h3>
-            <ul>
-                <li>6 botellas de 375 ml.</li>
-                <li>4 botellas de 750 ml.</li>
-                <li>Carta de degustación y maridaje</li>
-            </ul>
-
-        </section>
-
-        <br>
-
-        <section>
-            <h2>Preguntas Frecuentes</h2>
-
-            <h4>¿Cada cuánto voy a recibir mi pack de la parra si me suscribo?</h4>
-            <p>Al momento de contratar el servicio podes decidir si lo queres recibir por quincena o una vez al mes.</p>
-
-            <br>
-
-            <h4>¿Cada cuánto voy a recibir mi pack de la parra si me suscribo?</h4>
-            <p>Al momento de contratar el servicio podes decidir si lo queres recibir por quincena o una vez al mes.</p>
-
-            <br>
-
-            <h4>¿Cada cuánto voy a recibir mi pack de la parra si me suscribo?</h4>
-            <p>Al momento de contratar el servicio podes decidir si lo queres recibir por quincena o una vez al mes.</p>
-
-            <br>
-
-            <h4>¿Cada cuánto voy a recibir mi pack de la parra si me suscribo?</h4>
-            <p>Al momento de contratar el servicio podes decidir si lo queres recibir por quincena o una vez al mes.</p>
-
-        </section>
-
-        <br>
-
-        <section>
-
-            <h4>CONTACTANOS</h4>
-            <h2>¿Te quedan dudas?</h2>
-            <p>Queremos conversar con vos, te respondemos a la brevedad todas tus dudas</p>
-
-            <form action="" method="get">
-
-                <div>
-                    <label for="nombre">NOMBRE: </label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre...">
+    <main class="main">
+        <section class="mas-vendidos" id="masVendidos">
+            <div class="title-mas-vendidos">
+                <h3>Los mas vendidos:</h3>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="/assets/img/principal/almaNegraBlen.jpeg" alt="Imagen 1" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Alma Negra</h2>
+                        <h3 class="card-subtitle">Blen</h3>
+                        <a href="/pages/error404.html" class="btn">Ver mas</a>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="email">EMAIL:</label>
-                    <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com">
+                <div class="card">
+                    <img src="/assets/img/principal/luigiBoscaMalbec.jpeg" alt="Imagen 2" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Luigi Bosca</h2>
+                        <h3 class="card-subtitle">Malbec</h3>
+                        <a href="/pages/error404.html" class="btn">Ver mas</a>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="telefono">TELEFÓNO (opcional):</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="000 0000-0000">
+                <div class="card">
+                    <img src="/assets/img/principal/angelicaZapataMalbec.jpeg" alt="Imagen 3" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Angelica Zapata</h2>
+                        <h3 class="card-subtitle">Malbec</h3>
+                        <a href="/pages/error404.html" class="btn">Ver mas</a>
+                    </div>
                 </div>
-
-                <div>
-                    <label for="mensaje">MENSAJE:</label><br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                        placeholder="Deje aquí su mensaje..."></textarea>
-                </div>
-                <br>
-                <input type="submit" value="Enviar mensaje">
-            </form>
+            </div> 
         </section>
 
-
+        <section class="Productos-lista">
+            <div class="title-lista-vinos">
+                <h3>Lista de Vinos</h3>
+            </div>
+            <div class="list-container">
+                <div class="list-vinos">
+                    
+                </div>
+                <nav aria-label="..." class="nav-pages">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="/pages/error404.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/error404.html">3</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </section>
+        
     </main>
 
     <footer class="footer">
@@ -247,6 +161,7 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/js/principal.js"></script>
 </body>

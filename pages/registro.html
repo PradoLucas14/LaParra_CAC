@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>La parra | Acceso</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">La Parra</a>
+                <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contactanos</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Conocenos</a></li>
+                        <li class="nav-item"><a href="/registro.html" class="nav-link">Acceso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner-image">
+            <div class="content text-center">
+                <div class="banner-overlay">
+                    <div class="content-elements">
+                        <div class="banner-text">
+                            <h1>Crear cuenta</h1>
+                            <h3>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+		<form action="" class="formulario" id="formulario">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="ejemplo123">
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escriba su nombre..." required>
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@ejemplo.com">
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="0022442244">
+					<i class="formulario__validacion-estado fa-regular fa-circle-xmark"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+            <!-- Medio de contacto de preferencia -->
+            <div>
+                <p>Seleccione un medio de contacto de preferencia: </p>
+                <label class="container">Correo Electrónico
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Teléfono
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!-- Fecha de nacimiento -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="fecnac" class="fecnac">Fecha de nacimiento: </label><br>
+                    <input type="date" id="fecnac" name="fecnac" max="2006-12-31" required>
+                </div>
+                <!-- Foto -->
+                <div>
+                    <label for="foto" class="foto">Adjunte su foto: </label><br>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <!-- Selección tipo de vino -->
+                <div>
+                    <label for="vinos" class="vinos">¿Cuál es tu vino favorito?</label><br>
+                    <select name="vinos" id="vinos">
+                        <option value="">Selecciona una opción</option>
+                        <option value="seco">seco</option>
+                        <option value="semiseco">semiseco</option>
+                        <option value="abocado">abocado</option>
+                        <option value="semidulce">semidulce</option>
+                        <option value="dulce">dulce</option>
+                    </select>
+                </div>
+            </fieldset>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Términos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensajeerror" id="formulario__mensaje">
+				<p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Registrarse</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+    <footer class="footer">
+        <p>La Parra</p>
+        <section class="redes-footer">
+            <div class="constainer-redes">
+                <a href="/pages/error404.html" class="redes">
+                    <i class="bi bi-instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </i>
+                </a>
+                <a href="/pages/error404.html" class="redes">
+                    <i class="bi bi-twitter-x">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </i>
+                </a>
+                <a href="/pages/error404.html" class="redes">
+                    <i class="bi bi-tiktok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg>
+                    </i>
+                </a>
+            </div>
+        </section>
+        <section class="telefonos-footer">
+            <div class="container-telefonos">
+                <h4>3813334444</h4>
+                <h4 class="gion"> - </h4>
+                <h4>3812229999</h4>
+            </div>
+        </section>
+        <section class="links-footer">
+            <div class="container-links">
+                <a href="/index.html" class="footer-link">Inicio</a>
+                <a href="#" class="footer-link">Productos</a>
+                <a href="#" class="footer-link">Contactanos</a>
+                <a href="#" class="footer-link">Conocenos</a>
+                <a href="/registro.html" class="footer-link">Acceso</a>
+            </div>
+        </section>
+        <section class="footer-reservados">
+            <div class="container-reservados">
+                &copy; 2024 La Parra | Diseñado por Grupo 11 comision 24158
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="/js/principal.js"></script>
+    <script src="/js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/5c01d0fb9a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
