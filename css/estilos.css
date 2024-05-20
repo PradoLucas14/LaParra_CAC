@@ -18,7 +18,7 @@
     transition: 0.3s;
 }
 .nav-link:hover{
-    color: #d2d2d2;
+    color: rgb(255, 185, 100);
 }
 .banner-image{
     background-image: url("/assets/img/principal/pexels-kxrz-2664149.jpg");
@@ -179,7 +179,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: bisque;
+    background-color:antiquewhite;
+}
+.mas-vendidos{
+    margin-bottom: 30px;
 }
 .card-container {
     display: flex;
@@ -199,7 +202,7 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #450a12;
+    background-color: #5d0712;
     margin: 15px;
     display: flex;
     align-items: center;
@@ -228,12 +231,56 @@
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: bisque;
+    color: #5d0712;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(255, 185, 100);
+    color: #5d0712;
 }
+.title-mas-vendidos h3, .title-lista-vinos h3{
+    text-align: center;
+    font-size: 35px;
+    color: #5d0712;
+}
+
+.Productos-lista{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.nav-pages{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    padding: 10px;
+}  
+ul.pagination {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}  
+ul.pagination li.page-item {
+    display: inline-block;
+    margin-right: 5px;
+}  
+ul.pagination li.page-item.active .page-link {
+    background-color: #5d0712;
+    color: bisque;
+    border-color: #5d0712;
+}  
+ul.pagination li.page-item:not(.active) .page-link {
+    color: #5d0712;
+    border-color: #5d0712;
+    background-color: antiquewhite;
+    transition: 0.3s;
+}  
+ul.pagination li.page-item:not(.active) .page-link:hover {
+    background-color: bisque;
+}
+  
