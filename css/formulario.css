@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+
+/*<----------------- NAVBAR Y BANNER ----------------->*/
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.collapse{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    color: #fff;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: #d2d2d2;
+}
+.banner-image{
+    background-image: url("/assets/img/registro/pexels-kampus.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.banner-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0 , 0 , 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    color: #fff;
+    font-size: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+.banner-text h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+.banner-btn-sub {
+    text-align: center;
+    padding-top: 10px;
+}
+.btn-sub {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a71027;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-sub:hover {
+    background-color: #7d212e;
+}
+.navBar-fondo{
+    background-color: #5e2129;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*<----------------- FOOTER ----------------->*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+
+}
+.footer p{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.constainer-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.constainer-redes a{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bi{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    transition: 0.3s;
+}
+.bi:hover{
+    color: #a71027;
+}
+.container-telefonos{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.container-telefonos h4{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.container-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.container-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+.container-links a:hover{
+    color:#a71027
+}
+.container-reservados{
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .container-links{
+        flex-direction: column;
+    }
+    .gion{
+        display: none;
+    }
+    .container-telefonos{
+        flex-direction: column;
+    }
+    .container-reservados{
+        margin-bottom: 20px;
+    }
+}
+
+/* Estructura main */
+main {
+    height: auto;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+label {
+    display: inline-block;
+}
+
+fieldset {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #7d212d23;
+    padding: 40px;
+}
+
+/* Borde y sombra para input cuando se activa */
+input:focus {
+    border: 3px solid #a71027;
+    box-shadow: 3px 0px 3px #5e2129;
+}
+
+button {
+    background-color: #a71027;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7d212e;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo para fomulario */
+#nombre, #usuario, #fecnac, #foto, select, #correo, #telefono, #password, #password2 {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #5e2129;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* Selección medio de contacto */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #a7102748;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #a71027;
+}
+
+input:checked .container ~ .checkmark {
+    background-color: #7d212d57;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+} 
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a71027;
+}
+
+
+/* Items, Terminos y condiciones */
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    align-items: start;
+}
+
+.fecnac, .foto, .vinos {
+    font-weight: 700;
+}
+
+
+/* Mensaje Error: Por favor rellena... */
+
+.formulario__mensajeerror {
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #a7102748;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensajeerror-activo {
+    display: block;
+}
+
+/* Error (cuando esta inactivo)*/
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+/* Error (cuando esta activo) */
+.formulario__input-error-activo {
+    display: block;
+}
+
+/* Iconos (cuando esta inactivo)*/
+.formulario__validacion-estado {
+    font-size: 14px;
+    opacity: 0;
+}
+
+
+/* Mensaje de éxito inactivo */
+.formulario__mensaje-exito {
+    font-size: 16px;
+    color: #a71027;
+    display: none;
+}
+
+/* Mensaje de éxito activo */
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* Estilos para la validación */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
