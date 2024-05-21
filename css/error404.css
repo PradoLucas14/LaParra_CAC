@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
 /*------------------- Main y Banner -------------------*/
 .banner-image{
     background-image: url("/assets/img/error404/pexels-taryn-elliott-4099298.jpg");
@@ -60,4 +61,51 @@
 }
 .btn-error:hover{
     background-color: #7d212e;
+}
+
+/*------------------- Responsive Breakpoints -------------------*/
+
+/* Mobile devices */
+@media (max-width: 599px) {
+    .container-error {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .text-error h2 {
+        font-size: 50px;
+    }
+    .text-error h4 {
+        font-size: 20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .container-error {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+    }
+    .text-error h2 {
+        font-size: 70px;
+    }
+    .text-error h4 {
+        font-size: 25px;
+    }
+}
+
+/* Desktops */
+@media (min-width: 900px) {
+    .container-error {
+        width: 500px;
+        height: 350px;
+        padding: 40px;
+    }
+    .text-error h2 {
+        font-size: 90px;
+    }
+    .text-error h4 {
+        font-size: 30px;
+    }
 }
