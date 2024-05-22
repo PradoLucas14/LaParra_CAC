@@ -79,6 +79,11 @@
     font-size: 25px;
     font-weight: 600;
 }
+@media (max-width: 767px) {
+    .mx-auto{
+        display: none;
+    }
+}
 /*<----------------- MAIN Y LOGIN ----------------->*/
 .main{
     height: auto;

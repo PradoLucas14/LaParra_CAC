@@ -104,6 +104,9 @@
         justify-content: space-around;
         flex-direction: column;
     }
+    .mx-auto{
+        display: none;
+    }
 }
 .card {
     width: 320px;
